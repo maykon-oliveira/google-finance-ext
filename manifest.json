@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Google Finance Ext",
+    "version": "1.0",
+    "description": "Add feature to notificate user of actives changes",
+    "permissions": ["tabs", "notifications", "alarms", "storage"],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["src/content.js"],
+            "matches": ["https://www.google.com/finance/portfolio/*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "48": "images/icon-48.png"
+        }
+    },
+    "icons": {
+        "48": "images/icon-48.png"
+    }
+}
