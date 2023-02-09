@@ -24,13 +24,7 @@ chrome.runtime.onInstalled.addListener(() => {
 const ALARM_NAME = "GF_SCHEDULER_UPDATE";
 
 chrome.alarms.create(ALARM_NAME, {
-    periodInMinutes: 1,
-});
-
-chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === ALARM_NAME) {
-        console.log(ALARM_NAME);
-    }
+    periodInMinutes: 0.5,
 });
 
 // https://developer.chrome.com/docs/extensions/mv3/user_interface/#notifications

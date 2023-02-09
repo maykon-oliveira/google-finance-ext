@@ -1,0 +1,71 @@
+* {
+  letter-spacing: 0.0727272727em;
+}
+
+body {
+  min-width: 300px;
+}
+
+.App {
+  padding: 1rem;
+}
+
+#actives {
+  padding: 0;
+  position: relative;
+}
+
+.active-li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.active-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.tracking {
+  margin: 0 0.5rem;
+}
+
+.not-tracking {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.not-tracking::after {
+  position: absolute;
+    border-bottom: 2px solid rgb(80, 80, 78);
+    width: 100%;
+    content: " ";
+}
+
+.active-name {
+  text-align: center;
+  margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.active-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 220px;
+  margin-left: auto;
+}
+
+.active-price-input {
+  max-width: 60px;
+}
+
+.active-price {
+  margin: 0 1rem;
+}
